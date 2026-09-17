@@ -47,7 +47,7 @@ once (`i < j`); `IsTri` = three pairwise-distinct pairwise-adjacent vertices;
 **Pinned proof source:**
 
 - Repository: https://github.com/tongriyaotxt/jsp-000839-lean-proof
-- Pinned commit: `PINNED-COMMIT-SHA-TO-FILL`
+- Pinned commit: `9668e1e108009a6da4b7a6f132010250d8318d51`
 - File: `Jsp000839.lean` (self-contained, **Lean 4 core only, no Mathlib dependency**, ~3800 lines)
 - Toolchain: Lean v4.34.0 (pinned in `lean-toolchain`)
 
@@ -55,7 +55,7 @@ once (`i < j`); `IsTri` = three pairwise-distinct pairwise-adjacent vertices;
 
 - Local kernel check (Lean v4.34.0, Windows, `lean Jsp000839.lean`): pass, no errors (2026-09-17).
 - Axiom audit (`#print axioms jsp_000839`): `propext`, `Classical.choice`, `Quot.sound` only. **No `sorryAx`; no `native_decide`/`Lean.ofReduceBool`** — the entire development is kernel-checked reasoning with no trusted computation. The three sanity examples (`K₅` minus two edges: 8 edges, explicit edge-disjoint triangle pair, theorem instantiation) use kernel `decide` only.
-- CI kernel check (GitHub Actions, ubuntu-latest, fresh elan + Lean v4.34.0, `lean Jsp000839.lean` plus automated sorryAx scan): CI-RUN-URL-TO-FILL.
+- CI kernel check (GitHub Actions, ubuntu-latest, fresh elan + Lean v4.34.0, `lean Jsp000839.lean` plus automated sorryAx scan): https://github.com/tongriyaotxt/jsp-000839-lean-proof/actions/runs/35238356990 — result: pass (kernel check + sorryAx scan).
 
 If the record for JSP-000839 is updated to `Lean proof: Yes` (k = 2 component) following review, its claim-status screening flags would change accordingly; this issue supplies the evidence for that review. The submission covers only the `k = 2` case; the general Győri theorem (all `k`) is not part of this submission.
 
